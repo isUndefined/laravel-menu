@@ -1,0 +1,11 @@
+{
+    "name": "rts/menu",
+    "description": "Laravel 5 Menu by RTS",
+    "authors": [
+        {
+            "name": "Iurie",
+            "email": "iurie.nastasiu@rts.md"
+        }
+    ],
+    "require": {}
+}
