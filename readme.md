@@ -2,16 +2,20 @@
 
 ### Instalation
 
-**1.** Open `composer.json`, find and add:
+**1.** Open `composer.json`, add:
 ```
-"psr-4": {
-	...
-	"Rts\\Menu\\": "packages/Rts/Menu/src"
-}
+"repositories": [
+    {
+        "type": "git",
+        "name": "menu",			
+	    "url": "http://git.rts.md/laravel/menu.git",
+		"vendor-alias":"rts"
+    }
+],
 ```
 **1a.** Run command:
 ```ssh
-php composer.phar update
+php composer.phar require "rts/menu":"*"
 ```
 
 **2.** Open `config/app.php`, find and add:
