@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['prefix' => 'backend', 'namespace' => 'Isundefined\Menu\Http\Controllers', 'middleware'=>'auth'], function () {
+Route::group(['prefix' => 'backend', 'namespace' => 'Rts\Menu\Http\Controllers', 'middleware'=>'auth'], function () {
 	
 	Route::get('/menu', [
 		'as' => 'backend.menu.manage',
