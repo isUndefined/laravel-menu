@@ -7,5 +7,10 @@
             "email": "iurie.nastasiu@rts.md"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Rts\\Menu\\": "src/"
+        }
+    }
 }
