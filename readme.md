@@ -6,7 +6,7 @@
 ```
 "psr-4": {
 	...
-	"Isundefined\\Menu\\": "packages/Isundefined/Menu/src"
+	"Rts\\Menu\\": "packages/Rts/Menu/src"
 }
 ```
 **1a.** Run command:
@@ -18,7 +18,7 @@ php composer.phar update
 ```
 'providers' => [
 	...
-	Isundefined\Menu\MenuServiceProvider::class,
+	Rts\Menu\MenuServiceProvider::class,
 	...
 ]
 ```
@@ -26,7 +26,7 @@ php composer.phar update
 ```
 'aliases' => [
 	...
-	'Menu'      	=> Isundefined\Menu\Facades\Menu::class,
+	'Menu'      	=> Rts\Menu\Facades\Menu::class,
 	...
 ]
 ```
@@ -34,6 +34,14 @@ php composer.phar update
 **4.** Run command:
 ```ssh
 php artisan vendor:publish --tag=menu_migrations
+```
+```ssh
+php artisan vendor:publish --tag=menu_config
+```
+
+**5.** Open `config/menu.php`, register your template in array:
+```
+'templates' => ['bootstrap','custom'],
 ```
 
 ### Show menu in blade
