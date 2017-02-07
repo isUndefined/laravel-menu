@@ -33,7 +33,7 @@ class Menus extends Model {
 		return $this->hasOne('\Rts\Menu\Models\MenusItems','menus_id');
 	}
 	
-	public function __get(){
+	public function __get($key){
 		if(in_array($key,$this->translatable)){
 			$currentLocale = app()->getLocale();
 
