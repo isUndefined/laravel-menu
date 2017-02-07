@@ -39,6 +39,9 @@ class MenuBild extends Model
 	
 	public function get_menu($name,$view=null){		
 		$items = $this->prepare($name);
+		if(!$items){
+			return false;
+		}
 		if($view && in_array($view, config('menu.templates'))){			
 			return view('MenuView::templates.'.$view, compact('items'));
 		}
