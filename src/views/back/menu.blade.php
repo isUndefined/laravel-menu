@@ -209,14 +209,14 @@
 							newName = $('.field-multilingual input[name="L18nTranslate['+defaultLang+'][name]"]',_this).val();
 						}
 						
-						$('h6',objMenus).text('').text(newName);
-						$('i',objMenus).eq(0).attr('class','fa '+newIcon);
+						$('>.dd3-content h6',objMenus).text('').text(newName);
+						$('>.dd3-content i',objMenus).eq(0).attr('class','fa '+newIcon);
 						
 						var newInfo = JSON.parse(info);
 						newInfo.name = newName;
 						newInfo.icon = newIcon;
 						newInfo.url = newUrl;
-						$('.btn-edit',objMenus).attr('data-info',JSON.stringify(newInfo));
+						$('>.dd3-content .btn-edit',objMenus).attr('data-info',JSON.stringify(newInfo));
 						
 						$('#EditModal').modal('hide');	
 					
