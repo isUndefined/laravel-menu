@@ -15,7 +15,7 @@ class CreateMenusTranslateTable extends Migration
 		Schema::create('menus_translate', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('menus_id');
-            $table->string('slug',250);	
+            $table->string('name',250);	
             $table->string('locale',3);	
         });
 	}
